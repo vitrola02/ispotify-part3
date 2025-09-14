@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #181818;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+.slogan{
+    font-weight: bold;
+    font-size: 36px;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+}
+
+.email-input, .password-input{
+    border: none;
+    background-color: rgb(71, 70, 70);
+}
+
+.email-input{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 38%;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.password-input{
+    position: absolute;
+    color: black;
+    top: 60%;
+    left: 38%;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.email-icon{
+    position: absolute;
+    z-index: 2;
+    top: 51%;
+    left: 62%;
+    background-color: rgb(71, 70, 70); 
+}
+
+.password-icon{
+    position: absolute;
+    z-index: 2;
+    top: 60.5%;
+    left: 62%;
+    background-color: rgb(71, 70, 70); 
+}
+
+
+
+.login-button {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    width: 180px;
+    height: 35px;
+    border-radius: 17px;
+    top: 72%;
+    left: 45%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.login-button a:hover{
+    background-color: rgb(112, 109, 109);
+}
+
+.signup-link{
+    position: absolute;
+    top: 82%;
+    left: 42%;
+    font-size: 13px;
+}
+
+.subscribe{
+  text-align: center;
+  font-size: 18px; 
+  font-weight: bold; 
+  font-size: 35px;
+  top: 22%;
+  position: absolute;
+  left: 40%;
+}
+
+
+.email-input-singup, .create-password, .name-input {
+    border: none;
+    background-color: rgb(71, 70, 70);
+    color: black;
+}
+
+
+.email-input-singup {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.signup-email-icon {
+    position: absolute;
+    z-index: 2;
+    top: 50.5%;
+    left: 62%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(71, 70, 70);
+    pointer-events: none;
+}
+
+
+.create-password {
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.signup-lock-icon {
+    position: absolute;
+    z-index: 2;
+    top: 60.5%;
+    left: 62%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(71, 70, 70);
+    pointer-events: none;
+}
+
+
+.name-input {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.signup-user-icon {
+    position: absolute;
+    z-index: 2;
+    top: 70.5%;
+    left: 62%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(71, 70, 70);
+    pointer-events: none;
+}
+
+
+.singup-button {
+    position: absolute;
+    top: 82%;
+    left: 45%;
+    width: 180px;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.singup-button:hover {
+    background-color: rgb(112, 109, 109);
+}
+
+
+.subscribe {
+    position: absolute;
+    top: 22%;
+    left: 40%;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.login-link {
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    font-size: 15px;
+    color: white;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.corner {
+    width: 263px;
+    height: 100vh;
+    padding: 32px 20px 16px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.name, .artists, .liked-songs, .logout{
+    z-index: 2;
+}
+
+.name{
+    color: white;
+    top: 60px;
+    background-color: black;
+    font-weight: 700;
+    left: 60px;
+    position: absolute;
+    font-size: 28px;
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.artists{
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    top: 120px;
+    left: 80px;
+    display: flex;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
+.liked-songs{
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    top: 160px;
+    left: 50px;
+    display: flex;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
+.minha-conta{
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    top: 210px;
+    left: 50px;
+    display: flex;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
+
+.logout{
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    left: 90px;
+    display: flex;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    margin-top: 240%;
+}
+
+.logout a{
+    text-decoration: none;
+}
+
+.logout a:hover{
+    color: #016b2694;
+}
+
+.logout a:active{
+    color: #016b26;
+}
+
+.icon{
+    background-color: black;
+    border: none;
+    position: absolute;
+}
+
+#button:hover{
+    color: #016b2694;
+}
+
+#button:active{
+    color: #016b26;
+}
+
+.content{
+    padding: 90px 68px 68px;
+    background-color: #181818;
+    margin-left: 263px;
+    overflow-y: auto;
+    width: 100%;
+    flex: 1;
+}
+
+.content h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 48px 24px;
+    
+}
+
+.card{
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    padding: 16px 6% 24px 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    cursor: pointer;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.02);  
+}
+
+.card-button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    cursor: pointer;
+    background: transparent;
+    padding: 1%;
+    padding-bottom: 6%;
+    box-sizing: border-box;
+}
+
+.foto{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 8% auto;
+    max-width: 100%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px; 
+    background: transparent;
+    width: 100%;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.card-title{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    background-color: #1F1F1F;
+    display: -webkit-box;
+}
+
+.card-subtitle{
+    font-size: 17px;
+    font-weight: 600;
+    color: #8C8C8C;
+    background-color: #1F1F1F;
+}
+
+.input-error {
+  border: 2px solid #f44336;
+  background-color: #ffebee;
+}
+
+.error-message-login {
+  color: #f44336;
+  font-size: 12px;
+  margin: 5px 0 15px 10px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+    border: none;
+    font-weight: bold;
+    top: 67%;
+    left: 40%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.error-message-signup {
+  color: #f44336;
+  font-size: 12px;
+  margin: 5px 0 15px 10px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+    border: none;
+    font-weight: bold;
+    top: 77%;
+    left: 47%;
+    position: absolute;
+    text-decoration: none;
+}
+
+
+/* --- NOVAS CLASSES PARA ARTISTA E CURTIDAS --- */
+
+/* Estilo geral da página de artista */
+.artist-page {
+  background: linear-gradient(135deg, #000000, #000000);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho do artista */
+.artist-header {
+  padding: 40px 68px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #000000, #000000);
+  border-bottom: 1px solid #282828;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+.artist-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.artist-info h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.artist-info .subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+/* Título da lista de músicas */
+.artist-songs-title {
+  margin: 30px 68px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Tabela de músicas */
+.song-list {
+  margin: 0 68px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+.song-list th {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b3b3b3;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.song-list td {
+  padding: 12px 0;
+  font-size: 1rem;
+  color: white;
+  border-bottom: 1px solid #282828;
+}
+
+.song-list tr:hover {
+  background-color: #1e1e1e;
+}
+
+/* Ícones de música */
+.song-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.song-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  transition: color 0.2s;
+}
+
+.song-actions button:hover {
+  color: #1db954;
+}
+
+/* Botão de play */
+.play-btn {
+  background: #1DB954;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.play-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Coração (like) */
+.like-btn {
+  color: #b3b3b3;
+  transition: color 0.2s;
+}
+
+.like-btn:hover {
+  color: #1db954;
+}
+
+.like-btn.liked {
+  color: #1db954;
+}
+
+/* Mais opções */
+.more-btn {
+  color: #b3b3b3;
+  transition: color 0.2s;
+}
+
+.more-btn:hover {
+  color: #fff;
+}
+
+/* Página de Curtidas (Playlist) */
+.playlist-page {
+  background: linear-gradient(135deg, #000000, #000000);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-header {
+  padding: 40px 68px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #000000, #000000);
+  border-bottom: 1px solid #282828;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+.playlist-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.playlist-info h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.playlist-info .subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+
+.content .form-group {
+  position: relative;
+  width: 360px;            /* largura do card central */
+  margin: 18px auto;       /* centraliza horizontalmente e dá espaçamento vertical */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Texto do título centralizado (sobrescreve o alinhamento anterior) */
+.content h1 {
+  text-align: center;
+  font-size: 28px;         /* mantém tamanho similar ao que já tinha */
+  margin-bottom: 26px;     /* reduz um pouco a distância para os campos */
+}
+
+/* Inputs estilo "caixa escura" com bordas arredondadas, padding e cor do texto */
+.input-field {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 8px;     /* bordas arredondadas tipo pill */
+  background-color: rgb(71, 70, 70);
+  color: white;
+  padding: 0 44px 0 14px;  /* espaço à direita para ícones (se adicionar depois) */
+  outline: none;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+/* Placeholder levemente acinzentado para combinar com referência */
+.input-field::placeholder {
+  color: #cfcfcf;
+  opacity: 1;
+}
+
+/* Botões verdes estilo Spotify (pills) */
+.btn-green {
+  display: block;
+  width: 160px;
+  height: 36px;
+  margin: 12px auto 0 auto;   /* centraliza o botão abaixo do input */
+  border-radius: 20px;
+  background-color: #1DB954;  /* verde Spotify */
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  line-height: 36px;          /* centraliza o texto verticalmente */
+  box-shadow: none;
+}
+
+/* Pequeno efeito hover para feedback visual */
+.btn-green:hover {
+  filter: brightness(0.95);
+}
+
+/* Label acima dos inputs — estilo discreto (se preferir esconder, setamos display:none) */
+.content .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dcdcdc;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* Remove estilo indesejado de foco/navegação */
+.input-field:focus {
+  outline: 2px solid rgba(29,185,84,0.15);
+  box-shadow: none;
+}
+
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* acima do restante da página */
+}
+
+/* caixa do modal */
+.modal{
+  width: 360px;
+  max-width: 92%;
+  background: #000; /* painel escuro como na referência */
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  border: 1px solid rgba(255,255,255,0.04);
+  text-align: center;
+}
+
+/* título grande e em negrito centralizado */
+.modal h2{
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* corpo do modal com espaçamento entre elementos */
+.modal .modal-body{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* inputs dentro do modal (reaproveita .input-field, ajustando apenas o padding/altura) */
+.modal .input-field{
+  height: 36px;
+  padding: 0 44px 0 12px; /* espaço à direita para ícone */
+  border-radius: 6px;
+  background-color: rgb(71,70,70);
+  font-size: 14px;
+}
+
+/* wrapper para posicionar ícone dentro do input */
+.input-with-icon{
+  position: relative;
+}
+
+/* ícone posicionado à direita do input */
+.input-with-icon .input-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* área dos botões (Cancelar / Confirmar) */
+.modal .modal-actions{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+/* botão vermelho (Cancelar) */
+.btn-red{
+  width: 110px;
+  height: 34px;
+  border-radius: 20px;
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* botão verde (Confirmar) - quando dentro do modal, reduzimos a largura para combinar com o design) */
+.modal .btn-green{
+  width: 110px;
+  height: 34px;
+  border-radius: 20px;
+  line-height: 34px;
+}
+
+/* hover simples para os botões */
+.btn-red:hover, .modal .btn-green:hover{
+  filter: brightness(0.95);
+}
+
+/* evita que o conteúdo por trás seja rolado com o modal aberto
+   (só se desejar; comente se preferir não bloquear o scroll) */
+.modal-open {
+  overflow: hidden;
+}
